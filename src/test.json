@@ -1,0 +1,27 @@
+{
+  "name": "My Awesome NFT",
+  "description": "A unique digital asset that represents ownership of an exclusive piece of artwork.",
+  "image": "https://link-to-image-file.com/my-awesome-nft.png",
+  "attributes": [
+    {
+      "trait_type": "Category",
+      "value": "Art"
+    },
+    {
+      "trait_type": "Artist",
+      "value": "John Doe"
+    },
+    {
+      "trait_type": "Edition",
+      "value": "1 of 100"
+    }
+  ],
+  "external_url": "https://link-to-website.com/my-awesome-nft",
+  "background_color": "ffffff",
+  "creation_date": "2023-07-07",
+  "creator": {
+    "name": "John Doe",
+    "wallet_address": "0x123456789abcdefghi",
+    "link": "https://link-to-creator-profile.com/john-doe"
+  }
+}
