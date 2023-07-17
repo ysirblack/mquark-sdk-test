@@ -5,6 +5,7 @@ import { registry_abi, mquark_721_abi } from "./abi";
 import { MQuarkEntity, MQuarkRegistry, MQuarkNFT721 } from "./contracts";
 import { SignerOrProvider } from "mquark-sdk/dist/helpers/providerHelpers";
 import { gql, request } from 'graphql-request';
+import axios from "axios";
 
 async function main() {
   type Config = {
@@ -128,12 +129,15 @@ async function main() {
 
   // ================== API Service ==================///
 
+  
+  // const config = {
+  //   base_url: "https://api.studio.thegraph.com/query/35629/mquark-testnet-v1/",
+  //   end_point: "version/latest",
+  // }
+
   // const apiService = new ApiService(config);
 
-  // const signatureGeerator = new Signature(wallet);
-  // const signature = await signatureGeerator.signatureMessageWitSalt("0x2d323fBfdc22be7D8E3652CB4032C34eE2E3B667","1","1","1","ipfs:/uri","0x01");
-  // console.log("signature=>", signature);
-  // const res = await apiService.fetch_templates()
+  // const res = await apiService.fetch_owned_entities("0xfe7bc9d3dfd961226b621fc9b10be7acecaf497f")
   // console.log("templates=>", res)
   // const entity = await apiService.fetch_entity("1");
   // console.log("entity=>",entity)
@@ -151,6 +155,12 @@ async function main() {
 
   // ===================================================================================================//
 
+  //==================================Signature========================================================//
+  // const signatureGeerator = new Signature(wallet);
+  // const signature = await signatureGeerator.signatureMessageWitSalt("0x2d323fBfdc22be7D8E3652CB4032C34eE2E3B667","1","1","1","ipfs:/uri","0x01");
+  // console.log("signature=>", signature);
+  //===================================================================================================//
+
   //=================================IPFS Service========================================================//
   // const token = process.env.WEB3_TOKEN || "";
   
@@ -165,8 +175,91 @@ async function main() {
   // ======================= Subscription =======================//
   // const subscription = Subscription.init(mintConfig);
   // await subscription.subscribeToEntity("4","0x753ef8763ebb89a479957fbd5c644db9b034cc09","1","10000000000000")
+  // ====================================================================================================//
+
+  //============================API MQUARK TESTNET V1============================//
+  const endpoint = "https://api.studio.thegraph.com/query/35629/mquark-testnet-v1/version/latest";
+
+  // async function apiTest(param:any) {
+  //   const { mquarkEntities }: { mquarkEntities: any } = await request(
+  //     endpoint,
+  //     gql`
+  //       query OwnedEntities($_owner: String) {
+  //         mquarkEntities(owner: $_owner) {
+  //           id
+  //           entityId
+  //           name
+  //           description
+  //           thumbnail
+  //           contractAddress
+  //           defaultURI
+  //           owner
+  //           subscriptionPrice
+  //           subscriptionBalance
+  //           verifier
+  //         }
+  //       }
+  //     `,
+  //     { _owner: param }
+  //   );
+  //   return mquarkEntities;
+  // }
+  // console.log("entities:", await apiTest("0xfe7bc9d3dfd961226b621fc9b10be7acecaf497f"));
 
 
+
+  async function fetch_entity_collections_with_metadata(id: string) {
+    /// @dev Fetches an entity's created collections from the graph.
+    const { mquarkEntity}: { mquarkEntity: any } = await request(
+      endpoint,
+      gql`
+        query EntityCollections($_id: ID!) {
+          mquarkEntity(id: $_id) {
+            createdCollections {
+              id
+              entityId
+              collectionId
+              templateId
+              address
+              controller
+              verifier
+              template {
+                id
+                templateId
+                uri
+                category
+              }
+              balance
+              royalty
+              mintType
+              mintPrice
+              mintLimit
+              totalSupply
+              mintedCount
+              dynamic
+              free
+              whitelisted
+              collectionURIs
+              protocolBalance
+              protocolWithdrawnAmount
+              witdrawnAmount
+              totalWithdrawnAmount
+            }
+          }
+        }
+      `,
+      { _id: id }
+    );
+    for(let i = 0; i < mquarkEntity.length; i++) {
+      await axios.get(mquarkEntity[i].uri).then((res) => {
+        mquarkEntity[i].metadata = res.data;
+      })
+    }
+    return mquarkEntity;
+  }
+
+  console.log("entity collections:", await fetch_entity_collections_with_metadata("1"));
+  //===================================================================================================//
   // ======================= Free Test =======================//
   // const mquark_collection = new ethers.Contract("0x75c0b0F23A529Bd6CF1F890cEB61180B60fD84a7", mquark_721_abi, wallet) as MQuarkNFT721;
   // const tx = await mquark_collection.mint(0, { value: "10000000000" });

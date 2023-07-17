@@ -10,10 +10,11 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "axios": "^1.4.0",
     "dotenv": "^16.3.1",
     "ethers": "^5.7.2",
     "graphql-request": "^6.1.0",
-    "mquark-sdk": "^0.1.19",
+    "mquark-sdk": "^0.1.26",
     "tslib": "^2.5.3"
   }
 }
