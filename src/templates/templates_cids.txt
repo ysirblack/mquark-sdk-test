@@ -1,0 +1,16 @@
+armourTemplate.json => ipfs://bafkreign7zxaf5aerufssxjobuf7jzhrtgrbnn5yseqabjc5qkufz5ie6e
+artTemplate.json => ipfs://bafkreiarbjc7lmcrijpmjspqkfandkv7ztz4n2vqzad4apksodzwtnmccu
+carTemplate.json => ipfs://bafkreiavwyubtgei7bg67l6ye6ica57akondytdtu7l3ukveiupcmlisie
+
+clothTemplate.json => ipfs://bafkreihan6gvfdigx7ybomcaji327p2intcz32kcopa7dhv7krcep3nqju
+drinkTemplate.json => ipfs://bafkreib2fcjqdo2iudso2spk4a5542a34txicwewixzftyrwj7hjkmdnbi
+houseTemplate.json => ipfs://bafkreighigmotjkp6dsb3xtysswppdwkc4edf3dnaggwi5ccphd4obt7xe
+
+petTemplate.json => ipfs://bafkreib2yvuheuxxlxcgwpmv32zpr46otb3vdrguv4eo24sjlqv4hqpdmy
+planeTemplate.json => ipfs://bafkreibuido2mq27ic3o65nnsggwzvgcsokroaa44zh43najqekgi5rzii
+shieldTemplate.json => ipfs://bafkreie6ifvba2grkfdv3cbonfgmiuwlzjpmraavyeol5ruezkqb2mzn7a
+
+shipTemplate.json => ipfs://bafkreia4tmlrpjowds6j55ewrdbdfgd3nu5mfkrnzwdlemu2k7kozcdxkm
+swordTemplate.json => ipfs://bafkreih5djenba32rztbdpikjrd72r36xeyw72wkralb7vn2ekqtkgam44
+
+["ipfs://bafkreighigmotjkp6dsb3xtysswppdwkc4edf3dnaggwi5ccphd4obt7xe","ipfs://bafkreign7zxaf5aerufssxjobuf7jzhrtgrbnn5yseqabjc5qkufz5ie6e", "ipfs://bafkreiavwyubtgei7bg67l6ye6ica57akondytdtu7l3ukveiupcmlisie","ipfs://bafkreihan6gvfdigx7ybomcaji327p2intcz32kcopa7dhv7krcep3nqju","ipfs://bafkreib2fcjqdo2iudso2spk4a5542a34txicwewixzftyrwj7hjkmdnbi","ipfs://bafkreibuido2mq27ic3o65nnsggwzvgcsokroaa44zh43najqekgi5rzii","ipfs://bafkreie6ifvba2grkfdv3cbonfgmiuwlzjpmraavyeol5ruezkqb2mzn7a","ipfs://bafkreih5djenba32rztbdpikjrd72r36xeyw72wkralb7vn2ekqtkgam44","ipfs://bafkreib2yvuheuxxlxcgwpmv32zpr46otb3vdrguv4eo24sjlqv4hqpdmy","ipfs://bafkreiarbjc7lmcrijpmjspqkfandkv7ztz4n2vqzad4apksodzwtnmccu","ipfs://bafkreia4tmlrpjowds6j55ewrdbdfgd3nu5mfkrnzwdlemu2k7kozcdxkm"]

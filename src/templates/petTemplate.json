@@ -1,0 +1,25 @@
+{
+  "id": "14",
+  "name": "Pet",
+  "image": "ipfs://bafkreig4nx6uy5rip2daakr3yvrkyuvoogo7zv2352m2hhlsnvwseijeky",
+  "description": "Represents a pet.",
+  "external_url": "https://developers.unbounded.vision/docs/glossary#template",
+  "attributes": [
+    {
+      "trait_type": "type",
+      "value": "animal"
+    },
+    {
+      "trait_type": "domestic",
+      "value": "true"
+    },
+    {
+      "trait_type": "rideable",
+      "value": "true"
+    },
+    {
+      "trait_type": "usability",
+      "value": "companionship"
+    }
+  ]
+}

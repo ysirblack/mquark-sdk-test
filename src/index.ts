@@ -6,11 +6,14 @@ import { MQuarkEntity, MQuarkRegistry, MQuarkNFT721 } from "./contracts";
 import { SignerOrProvider } from "mquark-sdk/dist/helpers/providerHelpers";
 import { gql, request } from 'graphql-request';
 import axios from "axios";
+import { createHelia } from 'helia'
+import { json } from '@helia/json'
+import { Entities } from "mquark-sdk/dist/types";
 
 async function main() {
   type Config = {
     is_testnet?: boolean | undefined;
-    api_key: string;
+    api_key?: string | undefined;
     base_url?: string | undefined;
     end_point?: string | undefined;
     entity_wallet_address?: string | undefined;
@@ -66,18 +69,19 @@ async function main() {
   };
 
   //==================================Registry========================================================//
-  // const registtryService = Registry.init(mintConfig);
+  const registtryService = Registry.init(mintConfig);
 
-  // const registryOptions: RegistryOptions = {
-  //   entityName: "TEST",
-  //   description: "TST",
-  //   thumbnail: "ipfs://test",
-  //   entitySlotDefaultURI: "ipfs://test",
-  //   slotPrice: "10000000000",
-  // };
+  const registryOptions: RegistryOptions = {
+    entityName: "TEST",
+    description: "TST",
+    thumbnail: "ipfs://test",
+    entitySlotDefaultURI: "ipfs://test",
+    slotPrice: "10000000000",
+  };
 
   // const deployedEntity = await registtryService.registerEntity(registryOptions);
-  // console.log("Registered Entity Address:", deployedEntity);
+  const deployedEntity = await registtryService.getEntityAddress("1");
+  console.log("Registered Entity Address:", deployedEntity);
   //==================================================================================================//
 
   //==================================Entity========================================================//
@@ -137,7 +141,7 @@ async function main() {
 
   // const apiService = new ApiService(config);
 
-  // const res = await apiService.fetch_owned_entities("0xfe7bc9d3dfd961226b621fc9b10be7acecaf497f")
+  // const res = await apiService.fetch_owned_entities("0xfe7bcb621fc9b10be7acecaf497f")
   // console.log("templates=>", res)
   // const entity = await apiService.fetch_entity("1");
   // console.log("entity=>",entity)
@@ -208,57 +212,84 @@ async function main() {
 
 
 
-  async function fetch_entity_collections_with_metadata(id: string) {
-    /// @dev Fetches an entity's created collections from the graph.
-    const { mquarkEntity}: { mquarkEntity: any } = await request(
+  // async function fetch_entity_collections_with_metadata(id: string) {
+  //   /// @dev Fetches an entity's created collections from the graph.
+  //   const { mquarkEntity}: { mquarkEntity: any } = await request(
+  //     endpoint,
+  //     gql`
+  //       query EntityCollections($_id: ID!) {
+  //         mquarkEntity(id: $_id) {
+  //           createdCollections {
+  //             id
+  //             entityId
+  //             collectionId
+  //             templateId
+  //             address
+  //             controller
+  //             verifier
+  //             template {
+  //               id
+  //               templateId
+  //               uri
+  //               category
+  //             }
+  //             balance
+  //             royalty
+  //             mintType
+  //             mintPrice
+  //             mintLimit
+  //             totalSupply
+  //             mintedCount
+  //             dynamic
+  //             free
+  //             whitelisted
+  //             collectionURIs
+  //             protocolBalance
+  //             protocolWithdrawnAmount
+  //             witdrawnAmount
+  //             totalWithdrawnAmount
+  //           }
+  //         }
+  //       }
+  //     `,
+  //     { _id: id }
+  //   );
+  //   for(let i = 0; i < mquarkEntity.length; i++) {
+  //     await axios.get(mquarkEntity[i].uri).then((res) => {
+  //       mquarkEntity[i].metadata = res.data;
+  //     })
+  //   }
+  //   return mquarkEntity;
+  // }
+
+  const entities = async function fetch_owned_entities(owner: string): Promise<Entities> {
+    /// @dev Fetches an owner's entities from the graph.
+    const { mquarkEntities }: { mquarkEntities: Entities } = await request(
       endpoint,
       gql`
-        query EntityCollections($_id: ID!) {
-          mquarkEntity(id: $_id) {
-            createdCollections {
-              id
-              entityId
-              collectionId
-              templateId
-              address
-              controller
-              verifier
-              template {
-                id
-                templateId
-                uri
-                category
-              }
-              balance
-              royalty
-              mintType
-              mintPrice
-              mintLimit
-              totalSupply
-              mintedCount
-              dynamic
-              free
-              whitelisted
-              collectionURIs
-              protocolBalance
-              protocolWithdrawnAmount
-              witdrawnAmount
-              totalWithdrawnAmount
-            }
+        query OwnedEntities($_owner: String) {
+          mquarkEntities(where: {owner: $_owner}) {
+            id
+            entityId
+            name
+            description
+            thumbnail
+            contractAddress
+            defaultURI
+            owner
+            subscriptionPrice
+            subscriptionBalance
+            verifier
           }
         }
       `,
-      { _id: id }
+      { _owner: owner }
     );
-    for(let i = 0; i < mquarkEntity.length; i++) {
-      await axios.get(mquarkEntity[i].uri).then((res) => {
-        mquarkEntity[i].metadata = res.data;
-      })
-    }
-    return mquarkEntity;
+    return mquarkEntities;
   }
+  console.log("entities:", await entities("0xC52d3ECB7F84A27c68541933FDd5b74b96334c05"));
 
-  console.log("entity collections:", await fetch_entity_collections_with_metadata("1"));
+  // console.log("entity collections:", await fetch_entity_collections_with_metadata("1"));
   //===================================================================================================//
   // ======================= Free Test =======================//
   // const mquark_collection = new ethers.Contract("0x75c0b0F23A529Bd6CF1F890cEB61180B60fD84a7", mquark_721_abi, wallet) as MQuarkNFT721;
@@ -282,6 +313,15 @@ async function main() {
   //     console.log(err);
   //   });
   // ===================================================================================================//
+
+
+
+  // const helia = await createHelia()
+  // const j = json(helia)
+
+  // const myImmutableAddress = await j.add({ hello: 'world' })
+
+  // console.log(await j.get(myImmutableAddress))
 }
 
 main()

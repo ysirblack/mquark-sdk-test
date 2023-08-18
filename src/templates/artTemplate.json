@@ -1,0 +1,13 @@
+{
+  "id": "15",
+  "name": "Art",
+  "image": "ipfs://bafkreigk34625b3oz63nynfoulnd3pwjjxn4np337lh6s3tuxp3uqals3i",
+  "description": "Represents an Art",
+  "external_url": "https://developers.unbounded.vision/docs/glossary#template",
+  "attributes": [
+    {
+      "trait_type": "usability",
+      "value": "decorative"
+    }
+  ]
+}

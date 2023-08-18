@@ -1,0 +1,85 @@
+1.jpg => ipfs://bafkreig4nx6uy5rip2daakr3yvrkyuvoogo7zv2352m2hhlsnvwseijeky
+2.jpg => ipfs://bafkreigk34625b3oz63nynfoulnd3pwjjxn4np337lh6s3tuxp3uqals3i
+3.jpg => ipfs://bafkreiayxnnibg3b5lqctzb3kjonu6jqh5iohkdenl6sfjir56re2dt7qi
+4.jpg => ipfs://bafkreih5jiqnlu3nup335uu2nc3lk6kwiiuzqki375fsk6nawmczgo2rgy
+5.jpg => ipfs://bafkreieiwb3235eklmttqt6ltjlafpn5qjcep56xc5asczakw6sz4y65cq
+6.jpg => ipfs://bafkreibh7wjonyfx6zvlajem3zbalegiri6tlmubvui74av7jjbjw6ekpi
+7.jpg => ipfs://bafkreibvec2eoc5mgdcstrv23gag6nfbvcerfoms7c7kxzywgfdmtpfzee
+8.jpg => ipfs://bafkreihl4zv2dm4kkpw6lvxazc5zm4hqahjaiwcyh3z5udwtrlezgzmeya
+9.jpg => ipfs://bafkreib73tx3b2nnwc3gccvkz7nldklywe7hq6o332hjqsyxigap6xc74a
+10.jpg => ipfs://bafkreib7pu5kxhr4vixj45hqfhhemuhgsxmeks2wgnfc26qhklbkvuod5i
+11.jpg => ipfs://bafkreib4nvj6r3liupbnphtqeea6gaiezfysb7vclibniy7phnmwxqtskm
+12.jpg => ipfs://bafkreidltttwkbmjadcdh44gu6nbmpnrqo7a6cf7ek7pfnxgmouijhv76a
+13.jpg => ipfs://bafkreigh66u64tgsw47jjn77qczdyssgymlsdcaujhac65werrixhpntvu
+14.jpg => ipfs://bafkreiajkeqoukymqdw4tb5jbswtxdahm2n6zphuvffjymr5dcmusw36we
+15.jpg => ipfs://bafkreihukzatw23qgaubeykfyc4agn3qhwysnnuyov4ibnjrwreymnkyc4
+16.jpg => ipfs://bafkreiekkztf6jdvs7uwb5zjse3x3d546pfcg552gbgj3mys2tewwq5qbq
+17.jpg => ipfs://bafkreifklvt4tvzjc7qt35kvscnikuw5sfzuavpcpxohgg6qrj3wxfne7i
+18.jpg => ipfs://bafkreiczf6jn3gtgprvc6t76vflanjdb7jcg7vyjnyeq54obi5lklkwjjq
+19.jpg => ipfs://bafkreif2p5angkm3vyb4knomyixmli2far4q4va46npl3qh4xzmnrdq6li
+20.jpg => ipfs://bafkreif4qpqc56ksilm2x4at6u4nlrfbadjz6cfncqzwtyp3otu2qcpjku
+21.jpg => ipfs://bafkreihiailbqddehgl47bb5wpna5glt536rzfppwpzfftz5le7nzz5oym
+22.jpg => ipfs://bafkreiblebdpzpw3natv2opoyuwg3alnh6t3dajelskevagvw57q3hpft4
+23.jpg => ipfs://bafkreideuh7fe7pyddnlhqde4tefcx7yo5uxxgoivxf3yuqodakqsndwj4
+24.jpg => ipfs://bafkreihocckwjv3xx45bwgimmm353t6he6bx6iz6uk3lb6idmhtgt7gcca
+25.jpg => ipfs://bafkreic4xersciyvl5jzbsv7qygbjzghxplzmb5ttfq7ce4y3cfqgbul2a
+26.jpg => ipfs://bafkreifg4muv2hsahqbz5h3ldztqy5d46bebs34wo2onjvxoycxdg3ilke
+27.jpg => ipfs://bafkreiclkdmi6vvsghogr5bfmlp3sp32qxw7pytfodochpwatkx4qsmtge
+28.jpg => ipfs://bafkreibjdfpth2nxft7c7uga66ntsvqagqvydnfensljq4zagk532e6rt4
+29.jpg => ipfs://bafkreihwavog32ux3e5fku6fsf33wsbjaabh4gtrckmybp6uvlyjga2x7q
+30.jpg => ipfs://bafkreicf5cwnfchxzfyztjhe2bqwvyg73fpm3j72d7x2raxaezre7lj7zq
+31.jpg => ipfs://bafkreif6n547b7flfonhmq2r6bxmemexqdlmps5pl3sc2vzzbr3db5jws4
+32.jpg => ipfs://bafkreigf77oy7whkknjncbfwclgfae3awjfrucqniqjl4cdvj5op2ed64u
+33.jpg => ipfs://bafkreiccil5sxifffjvfqyaq65u2vpnp25h7fe5fjnbs2qte2ymtnf3icy
+34.jpg => ipfs://bafkreiakxouwgjvmcsg2zjabghxskd5fy3nvirpirikkkxlib4hecqzwvu
+35.jpg => ipfs://bafkreih7imxwd6tqlqcb4c4nktkal7vudgylifzbx7xxsw5r3a7nppwc5m
+36.jpg => ipfs://bafkreigcp53okhs3vxkxdxyi3qdh4vcitupsjck6kcqrqzicq3kik44psa
+37.jpg => ipfs://bafkreiel7pgi2jdeqotlwkghfhdvyhl6ie6etaat7vtamtqssd2fhcalzi
+38.jpg => ipfs://bafkreihvhufdjcg77uu7l4jecuve3a7r7t24347fwpytjoew5p7akgakmy
+39.jpg => ipfs://bafkreifhj5amtiqetwneonwoe47tltzwhlyibqcrpg73pgbxpsxariwvim
+40.jpg => ipfs://bafkreiavcjaattjd6jdgv2ru2vp2n7zmztvlqgxt4wbrto46ljjc7ipz3a
+41.jpg => ipfs://bafkreia76kls6wglej3ttzdiejwdrbmkoei47wntwny7jhacmaclefq54y
+42.jpg => ipfs://bafkreihlgvfs37votua527lb7ypeekv3djgwdwxy3l5mmatacmxy66jq4y
+43.jpg => ipfs://bafkreigp3xzt7s42vh5nit6u3hltsctqfwj6v5m32tifusqiuhl7cvexhm
+44.jpg => ipfs://bafkreibl333vegci5yfrphyzcayhtflfstxpxbhu4tjtsyx7b6idk4b7xm
+45.jpg => ipfs://bafkreiaymhm3atkephti5zd2u6dlbovuxpq7xkqbplezbyp2d56g6bhrfu
+46.jpg => ipfs://bafkreihpkn5bpebqfspmwotpdlmxtr4rjbvetpfiue6k7zqejlxdxm5zni
+47.jpg => ipfs://bafkreife2hqqmvbnxysq5wbpl2ujubys7dtejv2knprmz6dzr3g6ojwngm
+48.jpg => ipfs://bafkreih3sioqrsanrmbdbogfx27q44trmyw3k5yaxykrecllqysspvi2nm
+
+Templates 
+
+1  => pet	=> ipfs://bafkreig4nx6uy5rip2daakr3yvrkyuvoogo7zv2352m2hhlsnvwseijeky
+
+27 => car 	=> ipfs://bafkreiclkdmi6vvsghogr5bfmlp3sp32qxw7pytfodochpwatkx4qsmtge
+
+28 => drink 	=> ipfs://bafkreibjdfpth2nxft7c7uga66ntsvqagqvydnfensljq4zagk532e6rt4
+
+29 => drink 	=> ipfs://bafkreihwavog32ux3e5fku6fsf33wsbjaabh4gtrckmybp6uvlyjga2x7q
+
+30 => house  	=> ipfs://bafkreicf5cwnfchxzfyztjhe2bqwvyg73fpm3j72d7x2raxaezre7lj7zq
+
+31 => house  	=> ipfs://bafkreif6n547b7flfonhmq2r6bxmemexqdlmps5pl3sc2vzzbr3db5jws4
+
+32 => house 	=> ipfs://bafkreigf77oy7whkknjncbfwclgfae3awjfrucqniqjl4cdvj5op2ed64u
+
+33 => pouldron 	=> ipfs://bafkreiccil5sxifffjvfqyaq65u2vpnp25h7fe5fjnbs2qte2ymtnf3icy
+
+34 => pouldron 	=> ipfs://bafkreiakxouwgjvmcsg2zjabghxskd5fy3nvirpirikkkxlib4hecqzwvu
+
+35 => shield  	=> ipfs://bafkreih7imxwd6tqlqcb4c4nktkal7vudgylifzbx7xxsw5r3a7nppwc5m
+
+36 => shield  	=> ipfs://bafkreigcp53okhs3vxkxdxyi3qdh4vcitupsjck6kcqrqzicq3kik44psa
+
+37 => shield 	=> ipfs://bafkreiel7pgi2jdeqotlwkghfhdvyhl6ie6etaat7vtamtqssd2fhcalzi
+
+38 => sword 	=> ipfs://bafkreihvhufdjcg77uu7l4jecuve3a7r7t24347fwpytjoew5p7akgakmy
+
+39 => clothe 	=> ipfs://bafkreifhj5amtiqetwneonwoe47tltzwhlyibqcrpg73pgbxpsxariwvim
+
+40 => paper plane => ipfs://bafkreiavcjaattjd6jdgv2ru2vp2n7zmztvlqgxt4wbrto46ljjc7ipz3a
+
+48 => ship    => ipfs://bafkreih3sioqrsanrmbdbogfx27q44trmyw3k5yaxykrecllqysspvi2nm
+
+
+

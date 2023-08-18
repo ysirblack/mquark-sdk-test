@@ -1,0 +1,21 @@
+{
+  "id": "12",
+  "name": "Shield",
+  "image": "ipfs://bafkreih7imxwd6tqlqcb4c4nktkal7vudgylifzbx7xxsw5r3a7nppwc5m",
+  "description": "Represents a shield",
+  "external_url": "https://developers.unbounded.vision/docs/glossary#template",
+  "attributes": [
+    {
+      "trait_type": "type",
+      "value": "shield"
+    },
+    {
+      "trait_type": "equipable",
+      "value": "true"
+    },
+    {
+      "trait_type": "usability",
+      "value": "armour"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "id": "9",
+  "name": "Cloth",
+  "image": "ipfs://bafkreifhj5amtiqetwneonwoe47tltzwhlyibqcrpg73pgbxpsxariwvim",
+  "description": "Represents a piece of cloth",
+  "external_url": "https://developers.unbounded.vision/docs/glossary#template",
+  "attributes": [
+    {
+      "trait_type": "type",
+      "value": "wearable"
+    },
+    {
+      "trait_type": "wearable",
+      "value": "true"
+    },
+    {
+      "trait_type": "wearable_category",
+      "value": "full_body"
+    },
+    {
+      "trait_type": "usability",
+      "value": "fashion"
+    }
+  ]
+}

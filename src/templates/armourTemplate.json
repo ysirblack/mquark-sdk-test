@@ -1,0 +1,29 @@
+{
+  "id": "7",
+  "name": "Chest Armour",
+  "image": "ipfs://bafkreiakxouwgjvmcsg2zjabghxskd5fy3nvirpirikkkxlib4hecqzwvu",
+  "description": "Represents the armour of a character",
+  "external_url": "https://developers.unbounded.vision/docs/glossary#template",
+  "attributes": [
+    {
+      "trait_type": "type",
+      "value": "armour"
+    },
+    {
+      "trait_type": "equipable",
+      "value": "true"
+    },
+    {
+      "trait_type": "wearable",
+      "value": "true"
+    },
+    {
+      "trait_type": "body_part",
+      "value": "chest"
+    },
+    {
+      "trait_type": "usability",
+      "value": "armour"
+    }
+  ]
+}

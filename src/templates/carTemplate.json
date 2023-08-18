@@ -1,0 +1,13 @@
+{
+  "id": "8",
+  "name": "Car",
+  "image": "ipfs://bafkreiclkdmi6vvsghogr5bfmlp3sp32qxw7pytfodochpwatkx4qsmtge",
+  "description": "Represents",
+  "external_url": "https://developers.unbounded.vision/docs/glossary#template",
+  "attributes": [
+    {
+      "trait_type": "usability",
+      "value": "vehicle"
+    }
+  ]
+}

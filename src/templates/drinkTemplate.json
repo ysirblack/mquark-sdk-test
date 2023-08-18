@@ -1,0 +1,21 @@
+{
+  "id": "10",
+  "name": "Beverage",
+  "image": "ipfs://bafkreihwavog32ux3e5fku6fsf33wsbjaabh4gtrckmybp6uvlyjga2x7q",
+  "description": "Represents a beverage",
+  "external_url": "https://developers.unbounded.vision/docs/glossary#template",
+  "attributes": [
+    {
+      "trait_type": "type",
+      "value": "liquid"
+    },
+    {
+      "trait_type": "consumable",
+      "value": "true"
+    },
+    {
+      "trait_type": "usability",
+      "value": "beverage"
+    }
+  ]
+}

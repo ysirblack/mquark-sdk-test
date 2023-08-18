@@ -1,0 +1,21 @@
+{
+  "id": "6",
+  "name": "House",
+  "image": "ipfs://bafkreigf77oy7whkknjncbfwclgfae3awjfrucqniqjl4cdvj5op2ed64u",
+  "description": "Represents a house",
+  "external_url": "https://developers.unbounded.vision/docs/glossary#template",
+  "attributes": [
+    {
+      "trait_type": "type",
+      "value": "building"
+    },
+    {
+      "trait_type": "livable",
+      "value": "true"
+    },
+    {
+      "trait_type": "usability",
+      "value": "residential"
+    }
+  ]
+}

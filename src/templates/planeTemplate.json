@@ -1,0 +1,25 @@
+{
+  "id": "11",
+  "name": "Plane",
+  "image": "ipfs://bafkreiavcjaattjd6jdgv2ru2vp2n7zmztvlqgxt4wbrto46ljjc7ipz3a",
+  "description": "Represents a plane",
+  "external_url": "https://developers.unbounded.vision/docs/glossary#template",
+  "attributes": [
+    {
+      "trait_type": "type",
+      "value": "plane"
+    },
+    {
+      "trait_type": "vehicle",
+      "value": "true"
+    },
+    {
+      "trait_type": "airworthy",
+      "value": "true"
+    },
+    {
+      "trait_type": "usability",
+      "value": "vehicle"
+    }
+  ]
+}

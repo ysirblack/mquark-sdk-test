@@ -1,0 +1,17 @@
+{
+  "id": "13",
+  "name": "Sword",
+  "image": "ipfs://bafkreihvhufdjcg77uu7l4jecuve3a7r7t24347fwpytjoew5p7akgakmy",
+  "description": "Represents a sword",
+  "external_url": "https://developers.unbounded.vision/docs/glossary#template",
+  "attributes": [
+    {
+      "trait_type": "equipable",
+      "value": "true"
+    },
+    {
+      "trait_type": "usability",
+      "value": "sword"
+    }
+  ]
+}

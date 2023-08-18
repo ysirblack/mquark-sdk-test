@@ -1,0 +1,18 @@
+{
+  "id": "16",
+  "name": "Ship",
+  "image": "ipfs://bafkreih3sioqrsanrmbdbogfx27q44trmyw3k5yaxykrecllqysspvi2nm",
+  "description": "Represents a ship.",
+  "external_url": "https://developers.unbounded.vision/docs/glossary#template",
+  "attributes": [
+    {
+      "trait_type": "usability",
+      "value": "vehicle"
+    },
+    {
+      "trait_type": "floatable",
+      "value": "true"
+    }
+
+  ]
+}
